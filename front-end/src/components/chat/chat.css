@@ -1,0 +1,62 @@
+.chatArea{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+}
+
+.rightBorder{
+    border-right: 1px solid black;
+}
+
+.bottomBorder{
+    border-bottom: 1px solid black;
+}
+
+.recipients{
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+.manage{
+    height: 20vh;
+}
+
+.inheritWidth{
+    width: inherit;
+}
+
+.sendMessage{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    z-index: 5;
+}
+
+.sendButton{
+    width: 100%;
+}
+
+.btn{
+    height: 30px;
+    padding: 2px;
+}
+
+.messagesArea{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+}
+
+.messagesArea > .row > .text{
+    background-color: #fff !important;
+}
+
+.header{
+    height: 10vh;
+    color: blue;
+}
+.receiver{
+    color: blue;
+}

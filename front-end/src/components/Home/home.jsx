@@ -7,12 +7,17 @@ export default class Home extends Component{
 
     }
 
+    handleSignIn = user => {
+        this.props.onAuthenticate(user);
+        this.props.history.replace('/chat');
+    }
+
     render() {
         return (
-            <main role="main" className="container">
-                <LoginForm />
-                <SignUpForm />
-            </main>
+            <div className="container">
+                <LoginForm onAuthenticate={(user) => this.handleSignIn(user)} />
+                <SignUpForm onAuthenticate={(user) => this.handleSignIn(user)} />
+            </div>
         )
     }
 }
