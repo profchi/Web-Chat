@@ -55,7 +55,7 @@ export default class Chat extends Component{
         const result = await this.chatService.startChat(username);
 
         if (!result || result.error || !result.details){
-            return result && result.error;
+            return result;
         }
 
         const chats = {...this.state.chats};
